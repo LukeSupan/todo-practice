@@ -1,2 +1,3 @@
-# todo-practice
-Todo list app for practice
+# Basic ToDo list web app
+This is for practice. That is all.
+
