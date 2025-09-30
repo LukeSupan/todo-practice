@@ -1,3 +1,4 @@
 # Basic ToDo list web app
-This is for practice. That is all.
+this is for js and command line git practice
+i have been crutching on github desktop too heavily. i need to become a keyboard based being.
 
