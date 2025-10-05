@@ -102,11 +102,50 @@ form {
 .task {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    text-align: left;
+    padding: 1px 16px;
     background-color: var(--primary-color);
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.task .task-text {
+    padding: 10px 16px;
+    padding-right: 0px;
+    flex-grow: 1;
+}
+
+.trash-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1px;
+}
+
+.trash-button svg {
+    transition: 200ms ease-in-out;
+    fill: var(--bg-color);
+}
+
+.trash-button:hover svg {
+    fill: rgb(189, 0, 0);
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+}
+input[type="checkbox"]:checked {
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+input[type="checkbox"]:checked ~ .task-text {
+    text-decoration: line-through;
+    opacity: 0.6;
 }
